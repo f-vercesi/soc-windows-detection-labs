@@ -36,24 +36,18 @@ The labs cover:
 
 
 | Lab | Topic | Primary Telemetry |
-
 |---|---|---|
-
 | 1 | Windows Authentication Attack Analysis | Windows Security Logs, Splunk |
-
 | 2 | Suspicious Process Execution and PowerShell Abuse | Sysmon |
-
 | 3 | Windows Persistence and Local Privilege Indicators | Windows Security Logs, Sysmon |
-
 | 4 | Credential Access and Lateral Movement Correlation | Windows Security Logs, Sysmon, Active Directory |
-
 | 5 | Advanced Windows Detection and Investigation | Multiple telemetry sources |
 
 
 ## Current Progress
 
 
-\\*\\*Lab 1 — Windows Authentication Attack Analysis\\*\\*
+Lab 1 — Windows Authentication Attack Analysis
 
 
 Completed and documented.
