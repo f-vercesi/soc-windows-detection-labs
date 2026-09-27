@@ -1,0 +1,33 @@
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor / IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Local environment / secrets
+.env
+*.secret
+*.key
+*.pem
+
+# Splunk local configuration and credentials
+user-seed.conf
+passwords.conf
+splunk.secret
+server.pem
+cacert.pem
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary screenshots / exports
+*.bak

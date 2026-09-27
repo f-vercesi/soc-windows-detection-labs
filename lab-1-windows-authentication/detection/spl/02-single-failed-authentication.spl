@@ -1,0 +1,24 @@
+# LAB 1 - Single Failed Authentication
+#
+# Purpose:
+# Identify and investigate Windows failed authentication events.
+#
+# Event:
+# 4625 - Failed logon
+#
+# Analyst objective:
+# Examine the source, target, authentication method,
+# Logon Type, and failure status associated with the event.
+
+index=lab1_windows sourcetype="XmlWinEventLog:Security"
+| rex "<EventID>(?<EventID>\d+)</EventID>"
+| rex "<Data Name='TargetUserName'>(?<TargetUserName>[^<]+)</Data>"
+| rex "<Data Name='LogonType'>(?<LogonType>\d+)</Data>"
+| rex "<Data Name='IpAddress'>(?<IpAddress>[^<]+)</Data>"
+| rex "<Data Name='WorkstationName'>(?<WorkstationName>[^<]+)</Data>"
+| rex "<Data Name='AuthenticationPackageName'>(?<AuthenticationPackageName>[^<]+)</Data>"
+| rex "<Data Name='Status'>(?<Status>[^<]+)</Data>"
+| rex "<Data Name='SubStatus'>(?<SubStatus>[^<]+)</Data>"
+| search EventID=4625
+| table _time EventID TargetUserName LogonType IpAddress WorkstationName AuthenticationPackageName Status SubStatus
+| sort - _time
