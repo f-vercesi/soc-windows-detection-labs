@@ -1,111 +1,143 @@
-\# SOC Windows Detection Labs
+# SOC Windows Detection Labs
 
 
-
-A hands-on SOC portfolio project focused on Windows security monitoring, detection engineering, log analysis, and incident investigation.
-
+A hands-on Security Operations Center (SOC) portfolio project focused on Windows detection engineering, log analysis, investigation, and incident triage using realistic attack scenarios.
 
 
-The project consists of five progressive labs designed to demonstrate practical SOC Analyst skills using realistic attack scenarios and security telemetry.
+## Objective
 
 
-
-\## Labs
-
+The project consists of five progressive Windows security labs designed to demonstrate practical SOC Analyst L1/L2 skills.
 
 
-| Lab |                       Topic                        |               Primary Telemetry                 |
+The labs cover:
 
-|-----|----------------------------------------------------|-------------------------------------------------|
 
-|  1  | Windows Authentication Attack Analysis             | Windows Security Logs, Splunk                   |  
+- Windows authentication monitoring
 
-|  2  | Suspicious Process Execution and PowerShell Abuse  | Sysmon                                          |
+- Authentication attack detection
 
-|  3  | Windows Persistence and Local Privilege Indicators | Windows Security Logs, Sysmon                   |
+- Suspicious process execution
 
-|  4  | Credential Access and Lateral Movement Correlation | Windows Security Logs, Sysmon, Active Directory |
+- Persistence detection
 
-|  5  | Advanced Windows Detection and Investigation       | Multiple telemetry sources                      |
+- Credential access and lateral movement
+
+- Security event analysis
+
+- Splunk detection and investigation
+
+- MITRE ATT&CK mapping
+
+- Incident investigation and documentation
+
+
+## Labs
+
+
+| Lab | Topic | Primary Telemetry |
+
+|---|---|---|
+
+| 1 | Windows Authentication Attack Analysis | Windows Security Logs, Splunk |
+
+| 2 | Suspicious Process Execution and PowerShell Abuse | Sysmon |
+
+| 3 | Windows Persistence and Local Privilege Indicators | Windows Security Logs, Sysmon |
+
+| 4 | Credential Access and Lateral Movement Correlation | Windows Security Logs, Sysmon, Active Directory |
+
+| 5 | Advanced Windows Detection and Investigation | Multiple telemetry sources |
 
 
 ## Current Progress
 
 
-
-\*\*Lab 1 — Windows Authentication Attack Analysis\*\*
-
+\\*\\*Lab 1 — Windows Authentication Attack Analysis\\*\\*
 
 
 Completed and documented.
 
 
+The remaining labs are planned as part of the project's progressive detection and investigation roadmap.
 
-The remaining labs are planned as part of the project's progressive detection and investigation roadmap. 
 
-\## Lab 1 — Windows Authentication Attack Analysis
-
+## Lab 1 — Windows Authentication Attack Analysis
 
 
 The first lab focuses on detecting and investigating authentication attacks against a Windows workstation.
 
 
-
-The lab covers:
-
+Scenarios include:
 
 
-\- Failed authentication
+- Failed authentication
 
-\- Repeated authentication failures
+- Repeated authentication failures
 
-\- Brute-force behavior
+- Brute-force behavior
 
-\- Password spraying
+- Password spraying
 
-\- Successful authentication
+- Successful authentication
 
-\- Account lockout detection concepts
+- Account lockout detection concepts
 
-\- Authentication timeline reconstruction
-
-\- Splunk detection and investigation
-
-\- False-positive analysis
-
-\- SOC L1 investigation methodology
-
-\- MITRE ATT\&CK mapping
+- Authentication timeline reconstruction
 
 
-
-\## Technologies
-
+### Technologies
 
 
-\- Windows 10 Pro
+- Windows 10 Pro
 
-\- Kali Linux
+- Kali Linux
 
-\- Splunk Enterprise
+- Splunk Enterprise
 
-\- Splunk Universal Forwarder
+- Splunk Universal Forwarder
 
-\- Sysmon
+- Sysmon
 
-\- Windows Security Event Logs
+- Windows Security Event Logs
 
-\- VirtualBox
-
-
-
-\## Investigation Approach
+- VirtualBox
 
 
-
-The labs follow a practical SOC investigation workflow:
-
+### Skills Demonstrated
 
 
-\*\*Alert → Triage → Validation → Evidence Collection → Correlation → Timeline → Scope → Risk Assessment → Disposition → Escalation → Documentation\*\*
+- Windows event analysis
 
+- Splunk SPL
+
+- Authentication investigation
+
+- Detection logic
+
+- Attack pattern identification
+
+- Timeline reconstruction
+
+- False-positive analysis
+
+- SOC L1 triage methodology
+
+- MITRE ATT&CK mapping
+
+- Security documentation
+
+
+---
+
+
+## Project Philosophy
+
+
+The labs emphasize the analyst's workflow:
+
+
+**Alert → Triage → Validation → Evidence Collection → Correlation → Timeline → Scope → Risk Assessment → Disposition → Escalation → Documentation**
+
+
+The goal is not simply to generate security events, but to demonstrate how those events can be investigated and turned into actionable security findings.
